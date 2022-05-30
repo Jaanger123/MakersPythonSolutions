@@ -1,6 +1,6 @@
-number = int(input())
+string = input()
 
-if number > 0:
+if len(string) > 5:
     print(True)
 else:
     print(False)
