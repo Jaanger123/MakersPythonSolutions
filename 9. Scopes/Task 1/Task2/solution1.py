@@ -1,9 +1,9 @@
-x = 'Я глобальная переменная!'
-print(x)
+# x = 'Я глобальная переменная!'
+# print(x)
 
-def my_func():
-    global x
-    x = 'Я могу изменяться'
+# def my_func():
+#     global x
+#     x = 'Я могу изменяться'
     
-my_func()
-print(x)
+# my_func()
+# print(x)
