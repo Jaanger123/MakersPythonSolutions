@@ -1,4 +1,4 @@
 name_of_friends = ['Jaanger', 'Nastya', 'Aitegin', 'Rena', 'Murat']
 
-for name in name_of_friends:
-    print(name)
+for i in range(len(name_of_friends)):
+    print(name_of_friends[i])
