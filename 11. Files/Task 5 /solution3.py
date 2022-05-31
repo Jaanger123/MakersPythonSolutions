@@ -1,8 +1,12 @@
-f = open('task5.txt')
-list_ = []
-for i in f:
-    list_.append(int(i))
-f_ = open('task6.txt', 'w')
-print(f_.write(f"{min(list_)}-{max(list_)}"))
-f.close()
-f_.close()
+file1 = open('task5.txt')
+numbers = []
+
+for line in file1:
+    numbers.append(int(line))
+
+file2 = open('task6.txt', 'w')
+
+print(file2.write(f"{min(numbers)}-{max(numbers)}"))
+
+file1.close()
+file2.close()
