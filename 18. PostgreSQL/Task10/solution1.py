@@ -1,1 +1,1 @@
-# select title, year from work where year between 1601 and 1700;
+# SELECT title, year FROM work WHERE year BETWEEN 1601 AND 1700;

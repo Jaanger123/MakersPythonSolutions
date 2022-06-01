@@ -1,1 +1,1 @@
-# select paragraph.paragraphnum, character.charname, character.speechcount from paragraph join character on character.charid = paragraph.charid;
+# SELECT paragraph.paragraphnum, character.charname, character.speechcount FROM paragraph JOIN character ON character.charid = paragraph.charid;

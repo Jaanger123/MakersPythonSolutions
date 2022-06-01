@@ -1,1 +1,1 @@
-# select longtitle from work where longtitle ~ 'the';
+# SELECT longtitle FROM work WHERE longtitle ~ 'the';

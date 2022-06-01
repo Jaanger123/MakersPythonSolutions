@@ -1,1 +1,1 @@
-# select title from work where length(title) >(select avg(length(title)) from work);
+# SELECT title FROM work WHERE totalwords > (SELECT SUM(totalwords) FROM work) / (SELECT COUNT(*) FROM work);

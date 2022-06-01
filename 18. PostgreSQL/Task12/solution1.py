@@ -1,1 +1,1 @@
-# select distinct section from paragraph;
+# SELECT DISTINCT section FROM paragraph;

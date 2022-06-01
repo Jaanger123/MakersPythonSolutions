@@ -1,1 +1,1 @@
-# select plaintext from wordform where plaintext ilike 'a%'
+# SELECT plaintext FROM wordform WHERE plaintext ILIKE 'a%';

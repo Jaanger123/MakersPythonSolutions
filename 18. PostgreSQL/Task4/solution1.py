@@ -1,1 +1,1 @@
-# select avg(totalparagraphs) as avg from work where genretype = 't';
+# SELECT AVG(totalparagraphs) AS avg FROM work WHERE genretype = 't';

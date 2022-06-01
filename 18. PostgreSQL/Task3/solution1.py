@@ -1,1 +1,1 @@
-# select title, genretype from work where  genretype= 'p';
+# SELECT title, genretype FROM work WHERE genretype = 'p';

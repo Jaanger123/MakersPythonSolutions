@@ -1,1 +1,1 @@
-# select chapter.chapterid, chapter.description, work.title from chapter join work on chapter.workid = work.workid;
+# SELECT chapter.chapterid, chapter.description, work.title FROM chapter JOIN work ON chapter.workid = work.workid;

@@ -1,1 +1,1 @@
-# select title from work where totalwords >(select avg(totalwords ) from work);
+# SELECT title FROM work WHERE totalwords > (SELECT AVG(totalwords) FROM work);
