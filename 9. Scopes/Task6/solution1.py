@@ -10,7 +10,3 @@ def age_control():
             print(f"{name}, Вы можете войти в клуб")
 
 age_control()
-
-
-
-

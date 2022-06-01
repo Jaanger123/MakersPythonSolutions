@@ -2,8 +2,7 @@ a = list()
 
 def append_to_list():
     global a
-    for num in range(11):
-        a.append(num)
+    a = list(range(11))
     print(a)
     
 append_to_list()

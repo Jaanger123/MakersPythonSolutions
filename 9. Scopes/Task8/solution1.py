@@ -1,15 +1,15 @@
-def count_symbols(str):
-    count = 0
-    count1 = 0
-    count2 = 0
+def count_symbols(str_):
+    vowels = 0
+    consonants = 0
+    symbols = 0
     
-    for x in str.lower():
-        if x in "йуеыаоэяиюё":
-            count += 1 
-        elif x in "цкнгшщзмчвфжрлдтсп":
-            count1 += 1
+    for l in str_.lower():
+        if l in "йуеыаоэяиюё":
+            vowels += 1 
+        elif l in "цкнгшщзмчвфжрлдтсп":
+            consonants += 1
         else:
-            count2 += 1
-    return f'Количество гласных: {count}, согласных: {count1}, остальных символов: {count2}'
+            symbols += 1
+    return f'Количество гласных: {vowels}, согласных: {consonants}, остальных символов: {symbols}'
 
 print(count_symbols('Мурат супер'))

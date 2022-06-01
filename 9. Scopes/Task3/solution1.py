@@ -1,11 +1,10 @@
-# num = 3
+num = 3
 
-# def mul():
-#     global num
-#     num = num**2
+def mul():
+    global num
+    num = num ** 2
 
-# mul()
-# mul()
-# mul()
-# print(num)
-
+mul()
+mul()
+mul()
+print(num)
