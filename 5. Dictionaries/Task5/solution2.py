@@ -1,5 +1,7 @@
 a = {'a': 1, 'b': 2, 'c': 1}
-# print(list(a.keys()))
+list_ = []
 
 for key, value in a.items() :
-    print(key)
+    list_.append(key)    
+    
+print(list_)
