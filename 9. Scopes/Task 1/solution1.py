@@ -1,13 +1,14 @@
-def foo():
-    global var
-    var = 'переменная foo'
+# def foo():
+#     global var
+#     var = 'переменная foo'
 
-    def bar():
-        global var
-        print(f'переменная в foo:  {var}')
-        var = 'переменная bar'
+#     def bar():
+#         global var
+#         print(f'переменная в foo:  {var}')
+#         var = 'переменная bar'
 
-    bar()
-foo()
-print("переменная в foo: ", var)
+#     bar()
+# foo()
+# print("переменная в foo: ", var)
+
 
