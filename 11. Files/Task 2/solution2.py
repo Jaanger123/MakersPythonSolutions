@@ -1,4 +1,6 @@
-f = open('task2.txt')
-for i in f:
-    print(i)
-f.close()
+file = open('task2.txt')
+
+for line in file:
+    print(line)
+
+file.close()

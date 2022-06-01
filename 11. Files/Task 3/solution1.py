@@ -1,6 +1,7 @@
-with open("task3.txt", "w+")as file_:
-    for x in range(10):
-        list_ =  (str(x) + "*")
-        file_.write(list_)
-    file_.seek(0)
-    print(file_.read())
+with open('task3.txt', 'w+') as file:
+    for num in range(10):
+        str_ = str(num) + '*'
+        file.write(str_)
+    file.seek(0)
+    
+    print(file.read())

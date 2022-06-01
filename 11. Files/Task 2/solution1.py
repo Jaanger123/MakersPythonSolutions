@@ -1,5 +1,3 @@
-with open('task2.txt') as f:
-    for i in f:
-        print(i)
-
-
+with open('task2.txt') as file:
+    for line in file:
+        print(line)
