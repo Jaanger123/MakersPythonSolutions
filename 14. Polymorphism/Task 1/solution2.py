@@ -2,10 +2,9 @@ a = '12342342345'
 b = [1, ['a', 5, 6], 2, 3, 4, 5] 
 c = {1: 'a', 2: {'a': 1, 'b': 2}, 3: 'c'} 
 
-list_ = []
-list_.append(a)
-list_.append(b)
-list_.append(c)
+list_ = [a, b, c]
+i = 0
 
-for x in list_:
-    print(len(x))
+while i < len(list_):
+    print(len(list_[i]))
+    i += 1

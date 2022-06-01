@@ -5,18 +5,18 @@ class Language:
 
 class Python(Language):
     def write_function(self, func_name, arg):
-        return f"def {func_name}({arg}):"
+        return f'def {func_name}({arg}):'
+
     def create_variable(self, var_name, value):
-        return f"{var_name} = {value.__repr__()}"
+        return f'{var_name} = {value.__repr__()}'
         
 class JavaScript(Language):
     def write_function(self, func_name, arg):
-        a = "{     }"
-        return f"function {func_name}({arg}) {a};"
+        a = '{     }'
+        return f'function {func_name}({arg}) {a};'
+
     def create_variable(self, var_name, value):
-        return f"let {var_name} = {value.__repr__()};"
-
-
+        return f'let {var_name} = {value.__repr__()};'
 
 py = Python('mid', 3)
 print(py.write_function('get_code', 'a')) 
