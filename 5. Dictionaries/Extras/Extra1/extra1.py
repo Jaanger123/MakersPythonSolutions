@@ -1,5 +1,5 @@
-d = {'a': 10, 'b': 9, 'c': 3}
+a = {'a': 10, 'b': 9, 'c': 3}
 result = 1
-for v in d.values():
+for v in a.values():
     result = result * v
 print(result)

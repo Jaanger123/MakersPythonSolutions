@@ -1,0 +1,1 @@
+# select round(avg(character.speechcount)), work.title from character join character_work  on character.charid = character_work.charid join work on work.workid = character_work.workid group by title having title = 'Romeo and Juliet';

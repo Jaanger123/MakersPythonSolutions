@@ -1,0 +1,1 @@
+# select paragraph.paragraphnum, work.title, work.year from paragraph join work on paragraph.workid = work.workid;
