@@ -1,0 +1,1 @@
+# select chapter.chapterid, chapter.description, work.title from chapter join work on chapter.workid = work.workid;

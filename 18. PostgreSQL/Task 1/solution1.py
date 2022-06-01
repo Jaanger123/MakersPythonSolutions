@@ -1,0 +1,1 @@
+# SELECT plaintext FROM wordform limit 10;

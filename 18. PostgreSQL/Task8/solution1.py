@@ -1,0 +1,1 @@
+# select section, sum(wordcount) from paragraph group by section;

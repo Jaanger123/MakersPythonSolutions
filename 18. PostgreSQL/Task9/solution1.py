@@ -1,0 +1,1 @@
+# select charname, speechcount from character where speechcount between 15 and 30;
