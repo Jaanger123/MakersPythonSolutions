@@ -1,3 +1,6 @@
+import copy
+
 a = {'a': 1, 'b': 2, 'c': 1}
-b = a
+b = copy.deepcopy(a)
+
 print(b)
