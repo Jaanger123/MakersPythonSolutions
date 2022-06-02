@@ -1,7 +1,7 @@
 class CustomError(Exception):
-    def __init__(self,name):
-        self.name = name
-capitals_error = CustomError("ТОЛЬКО БОЛЬШИЕ БУКВЫ РАЗРЕШЕНЫ В ЭТОМ КОДЕ")
+    def __init__(self, message):
+        self.message = message
+
 
 def check_letters(string):
     if string.isupper():
@@ -9,4 +9,5 @@ def check_letters(string):
     else:
         raise capitals_error
 
+capitals_error = CustomError("ТОЛЬКО БОЛЬШИЕ БУКВЫ РАЗРЕШЕНЫ В ЭТОМ КОДЕ")
 print(check_letters("HELLO"))

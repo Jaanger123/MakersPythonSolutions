@@ -4,7 +4,7 @@ class A:
 
 class B(A):
     def method1(self):
-        super().method1() # super() позволяет на вызвать метод родительского класса
+        A.method1(self)
         print('Дополнительный функционал')
 
 obj = B()

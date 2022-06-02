@@ -4,7 +4,7 @@ class Person:
         self.age = age
 
     def display(self):
-        print(f"name:{self.name}, age:{self.age}")
+        return f'name:{self.name}, age:{self.age}'
 
 class Student(Person):
     def __init__(self, name, age, faculty):
@@ -12,8 +12,9 @@ class Student(Person):
         self.faculty = faculty
 
     def display_student(self):
-        print(f"name:{self.name}, age:{self.age}, faculty:{self.faculty}")
+        person_display = super().display()
+        return f'{person_display}, faculty:{self.faculty}'
 
-obj_student = Student("Rick", 21, "science")
-obj_student.display() 
-obj_student.display_student()
+obj_student = Student('Rick', 21, 'science')
+print(obj_student.display())
+print(obj_student.display_student())

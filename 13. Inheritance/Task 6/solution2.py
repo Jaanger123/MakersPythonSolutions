@@ -1,12 +1,12 @@
 class ContactList(list):
-    def __init__(self,arg=list):
-        self.arg = arg
+    def __init__(self, value=list()):
+        self.value = value
 
-    def search_by_name(self,name):
+    def search_by_name(self, name):
         result = []
-        for x in self.arg:
-            if name in x:
-                result.append(x)
+        for elem in self.value:
+            if name in elem:
+                result.append(elem)
         return result
 
 all_contacts = ContactList(['Ivan', 'Maris', 'Olga', 'Ivan Olya', 'Olya Ivan', 'ivan']) 

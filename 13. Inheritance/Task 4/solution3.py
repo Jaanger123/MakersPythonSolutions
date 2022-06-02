@@ -1,6 +1,10 @@
 class MyDict(dict):
     def get(self, key, default = 'Are you kidding?'):
-        return super().get(key, default)
+        try:
+            value = self[key]
+        except KeyError:
+            return default
+        return value
 
 obj_dict = MyDict({'some_title': 2})
 

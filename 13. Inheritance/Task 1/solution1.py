@@ -1,7 +1,4 @@
 class Class1:
-    def __init__(self):
-        pass
-
     def first(self):
         pass
 
