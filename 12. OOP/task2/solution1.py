@@ -1,6 +1,7 @@
+import math
 class Circle:
     color = 'Синий'
-    pi = 3.14
+    pi = math.pi
     def __init__(self, radius):
         self.radius = radius
 

@@ -6,7 +6,7 @@ class Circle:
         self.radius = radius
 
     def get_area(self):
-        return self.pi * (self.radius**2)
+        return self.pi * pow(self.radius,2)
 
 circle = Circle(2)
 circle.color = 'Красный'
