@@ -1,7 +1,9 @@
 def multiply_list(nums):
     total = 1
-    for num in nums:
-        total *= num
+    i = 0
+    while i < len(nums):
+        total = total * nums[i]
+        i += 1
         
     return total
 

@@ -1,8 +1,9 @@
 from functools import reduce
 
-def multiply_list(list_):
-    result = reduce(lambda x, y: x*y, list_)
-    return result
-l = [1, 2, 3, 4, 5]
+def multiply_list(nums):
+    total = reduce(lambda a, b: a * b, nums)
+    return total
 
-print(multiply_list(l))
+numbers = [1, 2, 3, 4, 5]
+
+print(multiply_list(numbers))
