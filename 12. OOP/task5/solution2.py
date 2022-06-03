@@ -5,8 +5,8 @@ class Phone:
         self.phone = phone
     
     def get_info(self):
-        print(f'Контакт: {self.name} {self.last_name}, телефон: +{self.phone}')
+        print('Контакт: ' + self.name + ' ' + self.last_name + ', телефон: ' + self.phone)
 
-contact = Phone('John', 'Snow', 996455123)
+contact = Phone('John', 'Snow', '+996455123')
 
 contact.get_info()

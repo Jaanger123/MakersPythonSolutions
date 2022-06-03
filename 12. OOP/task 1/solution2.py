@@ -5,13 +5,13 @@ class Song:
         self.year = year
 
     def show_author(self):
-        return f'Автор этой песни {self.author}'
+        return 'Автор этой песни ' + self.author
 
     def show_title(self):
-        return f'Название этой песни {self.title}'
+        return 'Название этой песни ' + self.title
 
     def show_year(self):
-        return f'Эта песня вышла в {self.year} году'
+        return 'Эта песня вышла в ' + str(self.year) + ' году'
 
 song = Song('Happy', 'Pharrell Williams', 2013)
 print(song.show_title())

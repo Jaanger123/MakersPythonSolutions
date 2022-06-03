@@ -19,9 +19,11 @@ class Password:
             raise Exception('Your password should have some symbols')
         
         return 'Ваш пароль сохранен.'
+
     def __str__(self):
-        b = len(self.password)
-        return b * '*'
+        pass_length = len(self.password)
+        return pass_length * '*'
 
 password = Password('we@#3fdfe')
+
 print(password.validate())
