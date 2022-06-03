@@ -1,26 +1,30 @@
 class CreateMixin:
     def create(self, key, todo):
-        if key in self.todos.keys():
+        res = self.todos.get(key)
+        if res:
             return 'Задача под таким ключём уже существует'
-        self.todos[key] = todo
+        else:
+            self.todos.update({key: todo})
         return self.todos
 
 class DeleteMixin:
     def delete(self, key):
         res = None
         if key in self.todos.keys():
-            res = self.todos.pop(key)
+            res = self.todos[key]
+            del self.todos[key]
         return res
 
 class UpdateMixin:
     def update(self, key, new_value):
-        self.todos.update({key:new_value})
+        self.todos[key] = new_value
         return self.todos
 
 class ReadMixin:
     def read(self):
         res = [x for x in self.todos.items()]
-        return sorted(res)
+        res.sort()
+        return res
 
 class ToDo(CreateMixin, DeleteMixin, UpdateMixin, ReadMixin):
     def __init__(self):
@@ -28,10 +32,10 @@ class ToDo(CreateMixin, DeleteMixin, UpdateMixin, ReadMixin):
 
     def set_deadline(self, data):
         from datetime import date
-        data = data.split('/')
-        dead_line = date(int(data[2]), int(data[1]),int(data[0]))
-        date_now = date.today()
-        res = dead_line - date_now
+        data = reversed(data.split('/'))
+        data = list(map(int, data))
+        dead_line = date(*data)
+        res = dead_line - date.today()
         return res.days
 
 task = ToDo()

@@ -14,9 +14,8 @@ class Triangle:
         return (self.height * self.base) // 2
 
 class Pyramid(Triangle, Square):
-
     def get_volume(self):
-        a = int(1/3 * (self.base**2) * self.height)
+        a = int(1 / 3 * (self.base**2) * self.height)
         return a
 
 s = Square(5)

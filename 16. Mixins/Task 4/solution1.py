@@ -38,10 +38,10 @@ class Fullstack(Frontend, Backend):
 
 a = Backend('Senior', 'Ruby')
 b = Frontend('Junior', 'C++')
-c = Fullstack('Ultra mega super puper senior', 'HTML')
+c = Fullstack('Middle', 'HTML')
 a.coding(100)
 b.coding(520)
-c.coding(87946532)
+c.coding(298)
 print(a.get_info())
 print(b.get_info())
 print(c.get_info())
