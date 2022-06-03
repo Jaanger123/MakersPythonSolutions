@@ -1,2 +1,3 @@
-list_ = [x * x for x in range(1, 26)]
+list_ = [num * num for num in range(1, 26)]
+
 print(list_)

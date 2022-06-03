@@ -4,6 +4,6 @@ dict_ = {
     'Nik': {'history': 84, 'math': 85, 'literature': 87}
 }
 
-new_dict = {key1: key2 for key1, val1 in dict_.items() for key2, val2 in val1.items() if val2 == max(val1.values())}
+new_dict = {key1: [key2 for key2 in val1.keys() if val1[key2] == max(val1.values())][0] for key1, val1 in dict_.items()}
 
 print(new_dict)

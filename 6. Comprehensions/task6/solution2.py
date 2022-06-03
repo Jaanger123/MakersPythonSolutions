@@ -1,2 +1,3 @@
-list_ = [x*x if x % 2 == 0 else x  for x in range(1, 11)]
+list_ = [num * num if not num % 2 else num for num in range(1, 11)]
+
 print(list_)

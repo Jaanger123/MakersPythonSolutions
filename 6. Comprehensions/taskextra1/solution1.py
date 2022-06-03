@@ -1,2 +1,3 @@
-list_ = [x / 2 for x in range(11) if x % 2 == 0 ]
+list_ = [num / 2 for num in range(11) if num % 2 == 0]
+
 print(list_)

@@ -1,2 +1,3 @@
-list_ = [pow(x, 2) if x % 2 == 0 else x  for x in range(1, 11)]
+list_ = [pow(num, 2) if num % 2 != 1 else num for num in range(1, 11)]
+
 print(list_)

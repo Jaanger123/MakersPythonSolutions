@@ -1,2 +1,3 @@
-list_ = [x ** 2 for x in range(1, 26)]
+list_ = [num ** 2 for num in range(1, 26)]
+
 print(list_)

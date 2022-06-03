@@ -1,2 +1,3 @@
-list_ = [True if x % 2 == 0 else False for x in range(1,11)]
+list_ = [True if num % 2 == 0 else False for num in range(1, 11)]
+
 print(list_)

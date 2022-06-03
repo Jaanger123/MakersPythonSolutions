@@ -1,3 +1,5 @@
 n = int(input())
-dict_ = {x:x*x for x in range(1, 501) if x % n == 0}
+
+dict_ = {num: num * num for num in range(1, 501) if not num % n}
+
 print(dict_)

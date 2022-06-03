@@ -1,2 +1,3 @@
-dict_ = {x:x * x for x in range(1,11)}
+dict_ = {num: num * num for num in range(1, 11)}
+
 print(dict_)
