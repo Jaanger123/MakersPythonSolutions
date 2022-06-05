@@ -20,7 +20,7 @@ class Square(Shape):
     
     @property
     def get_area(self):
-        return self.lenght * self.lenght
+        return (self.lenght * self.lenght)
 
 from math import pi
 class Circle(Shape):
@@ -29,7 +29,7 @@ class Circle(Shape):
     
     @property
     def get_area(self):
-        return pi * self.radius * self.radius
+        return pi * (self.radius * self.radius)
 
 triangle = Triangle(6, 3)
 square = Square(4)

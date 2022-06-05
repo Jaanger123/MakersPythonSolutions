@@ -1,9 +1,9 @@
-# a = ['pipi', 'papa', 'mama']
-# b = []
+a = ['pipi', 'papa', 'mama']
+b = []
 
-# for x in a:
-#     x = x.title()
-#     b.append(x)
+for x in a:
+    x = x.title()
+    b.append(x)
 
-# print(b)
+print(b)
 

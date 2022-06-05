@@ -6,4 +6,6 @@ def my_func():
     x = 'Я могу изменяться'
     
 my_func()
+
 print(x)
+print(globals())

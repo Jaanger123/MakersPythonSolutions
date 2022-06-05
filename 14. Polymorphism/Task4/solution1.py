@@ -9,12 +9,14 @@ class Triangle(Shape):
     def __init__(self, base, height):
         self.base = base
         self.height = height
+
     def get_area(self):
         return 1/2 * self.base * self.height
 
 class Square(Shape):
     def __init__(self, lenght):
         self.lenght = lenght
+
     def get_area(self):
         return self.lenght**2
 
@@ -22,6 +24,7 @@ from math import pi
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
+        
     def get_area(self):
         return pi * self.radius**2
 

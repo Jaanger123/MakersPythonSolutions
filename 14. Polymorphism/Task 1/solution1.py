@@ -9,7 +9,3 @@ list_.append(c)
 
 for x in list_:
     print(len(x))
-
-
-
-    
