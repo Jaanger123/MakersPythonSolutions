@@ -2,9 +2,9 @@ num = 3
 
 def mul():
     global num
-    num = num * num
+    num **= 2
 
-mul()
-mul()
-mul()
+for _ in range(3):
+    mul()
+
 print(num)

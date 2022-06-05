@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from math import pi
 
 class Shape(ABC):
     @abstractmethod
@@ -11,20 +12,18 @@ class Triangle(Shape):
         self.height = height
 
     def get_area(self):
-        return 1/2 * self.base * self.height
+        return 1 / 2 * self.base * self.height
 
 class Square(Shape):
-    def __init__(self, lenght):
-        self.lenght = lenght
+    def __init__(self, length):
+        self.length = length
 
     def get_area(self):
-        return self.lenght**2
+        return self.length**2
 
-from math import pi
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
-        
     def get_area(self):
         return pi * self.radius**2
 

@@ -7,6 +7,3 @@ def append_to_list():
     print(a)
     
 append_to_list()
-
-
-    

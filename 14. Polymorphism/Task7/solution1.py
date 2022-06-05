@@ -5,12 +5,14 @@ class Money:
     
 class Dollar(Money):
     rate = 84.80
+
     def exchange(self, amount):
         res = self.rate * amount
-        return f"$ {amount} равен {res} сомам"
+        return f'$ {amount} равен {res} сомам'
 
 class Euro(Money):
     rate = 98.40
+
     def exchange(self, amount):
         res = self.rate * amount
-        return f"€ {amount} равен {res} сомам"
+        return f'€ {amount} равен {res} сомам'

@@ -11,5 +11,6 @@ rex = Dog()
 
 def to_pet(animal):
     animal.voice()
-to_pet(barsik) 
-to_pet(rex) 
+
+to_pet(barsik)
+to_pet(rex)
