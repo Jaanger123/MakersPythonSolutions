@@ -1,10 +1,6 @@
 list_ = [-1, 2, 3, 5, -3, 7]
-result = []
 
-for x in list_:
-    if x > 0:
-        result.append(True)
-    else:
-        result.append(False)
+temp = [0 if num <= 0 else 1 for num in list_]
+result = list(map(lambda num: bool(num), temp))
 
 print(result)

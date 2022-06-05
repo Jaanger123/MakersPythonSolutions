@@ -1,7 +1,5 @@
 list_ = [1, 2, 3, 4]
-result = []
 
-for num in list_:
-    mul = num ** 2
-    result.append(mul)
+result = list(map(lambda num: pow(num, 2), list_))
+
 print(result)

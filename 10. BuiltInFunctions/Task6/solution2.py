@@ -1,8 +1,6 @@
-list_ = ['inheritance', 'solid', 'polymorphism', 'dry', 'yagni',]
-result = []
+list_ = ['inheritance', 'solid', 'polymorphism', 'dry', 'yagni']
 
-for word in list_:
-    if len(word) > 7:
-        result.append(word)
+is_gt = lambda word: len(word) > 7
+result = list(filter(is_gt, list_))
 
 print(result)
