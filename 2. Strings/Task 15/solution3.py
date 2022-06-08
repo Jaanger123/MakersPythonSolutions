@@ -1,3 +1,5 @@
 string = 'abracadabra'
 
-print(string[:5], 'K', string[6:], sep='')
+result = '{}K{}'.format(string[:5], string[6:])
+
+print(result)

@@ -1,7 +1,7 @@
 from math import fabs
 
 positive = 5
-negative = -5
+negative = -6
 
 print(fabs(positive))
 print(fabs(negative))
