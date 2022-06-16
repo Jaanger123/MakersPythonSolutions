@@ -22,7 +22,7 @@ class Backend(Coder):
     def coding(self, count):
         self.count_code_time += count
 
-class  Frontend(Coder):
+class Frontend(Coder):
     def __init__(self, experience, languages_frontend, ):
         self.languages_frontend = languages_frontend
         self.experience = experience
@@ -39,9 +39,11 @@ class Fullstack(Frontend, Backend):
 a = Backend('Senior', 'Ruby')
 b = Frontend('Junior', 'C++')
 c = Fullstack('Middle', 'HTML')
+
 a.coding(100)
 b.coding(520)
 c.coding(298)
+
 print(a.get_info())
 print(b.get_info())
 print(c.get_info())

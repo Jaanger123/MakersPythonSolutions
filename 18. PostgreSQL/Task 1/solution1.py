@@ -1,1 +1,3 @@
-# SELECT plaintext FROM wordform LIMIT 10;
+"""
+SELECT plaintext FROM wordform LIMIT 10;
+"""

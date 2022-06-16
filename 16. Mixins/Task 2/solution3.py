@@ -1,5 +1,6 @@
 class RadioMixin:
-    def play_music(self, title):
+    @staticmethod
+    def play_music(title):
         return 'Песня называется {0}'.format(title)
 
 class Auto(RadioMixin):
@@ -14,6 +15,7 @@ class Amphibian(Auto, Boat):
 auto = Auto()
 boat = Boat()
 obj = Amphibian()
+
 print(auto.play_music('We fell in love in october'))
 print(boat.play_music('We fell in love in october'))
 print(obj.play_music('We fell in love in october'))

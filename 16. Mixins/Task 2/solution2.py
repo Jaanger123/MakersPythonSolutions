@@ -1,5 +1,6 @@
 class RadioMixin:
-    def play_music(self, title):
+    @classmethod
+    def play_music(cls, title):
         return 'Песня называется ' + title
 
 class Auto(RadioMixin):
@@ -14,6 +15,7 @@ class Amphibian(Auto, Boat):
 auto = Auto()
 boat = Boat()
 obj = Amphibian()
+
 print(auto.play_music('Die for you'))
 print(boat.play_music('Die for you'))
 print(obj.play_music('Die for you'))

@@ -1,1 +1,3 @@
-# SELECT plaintext FROM wordform ORDER BY occurences DESC LIMIT(10);
+"""
+SELECT plaintext FROM wordform ORDER BY occurences DESC LIMIT(10);
+"""

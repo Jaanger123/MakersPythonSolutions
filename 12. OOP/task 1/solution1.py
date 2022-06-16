@@ -14,6 +14,7 @@ class Song:
         return f'Эта песня вышла в {self.year} году'
 
 song = Song('Happy', 'Pharrell Williams', 2013)
+
 print(song.show_title())
 print(song.show_author())
 print(song.show_year())

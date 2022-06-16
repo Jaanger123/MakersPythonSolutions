@@ -17,11 +17,3 @@ class Pyramid(Triangle, Square):
     def get_volume(self):
         a = int(1 / 3 * (self.base**2) * self.height)
         return a
-
-s = Square(5)
-t = Triangle(3,2)
-p = Pyramid(3,2)
-
-print(s.get_area())
-print(t.get_area())
-print(p.get_volume())

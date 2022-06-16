@@ -14,6 +14,7 @@ class Amphibian(Auto, Boat):
 auto = Auto()
 boat = Boat()
 obj = Amphibian()
+
 print(auto.play_music('Call out my name'))
 print(boat.play_music('Call out my name'))
 print(obj.play_music('Call out my name'))
