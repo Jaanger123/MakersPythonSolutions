@@ -1,0 +1,3 @@
+"""
+cd ~/makers/week1
+"""
