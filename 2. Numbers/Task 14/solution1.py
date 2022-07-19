@@ -1,7 +1,7 @@
 import math
 
-r = 5
+radius = 5
 
-total = math.pi * pow(r, 2)
+total = math.pi * pow(radius, 2)
 
 print(total)
